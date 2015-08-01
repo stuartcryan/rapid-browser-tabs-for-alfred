@@ -182,7 +182,7 @@
 				<key>queuemode</key>
 				<integer>2</integer>
 				<key>runningsubtext</key>
-				<string>Loading config</string>
+				<string>Loading setup options</string>
 				<key>script</key>
 				<string>use strict;
 use warnings;
