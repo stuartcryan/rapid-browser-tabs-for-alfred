@@ -192,11 +192,14 @@ print qq{&lt;?xml version="1.0" encoding="UTF-8" ?&gt;\n&lt;items&gt;\n};
 if ("{query}" eq "") {
 print qq{&lt;item uid="0001"&gt;&lt;arg&gt;sitesconfig&lt;/arg&gt;&lt;title&gt;Modify sites configuration&lt;/title&gt;&lt;subtitle&gt;&lt;/subtitle&gt;&lt;icon&gt;icon.png&lt;/icon&gt;&lt;/item&gt;\n};
 print qq{&lt;item uid="0002"&gt;&lt;arg&gt;configfolder&lt;/arg&gt;&lt;title&gt;Open configuration folder&lt;/title&gt;&lt;subtitle&gt;&lt;/subtitle&gt;&lt;icon&gt;icon.png&lt;/icon&gt;&lt;/item&gt;\n};
+print qq{&lt;item uid="0003"&gt;&lt;arg&gt;configfolderlocationsetup&lt;/arg&gt;&lt;title&gt;Set root config folder location (enable syncing)&lt;/title&gt;&lt;subtitle&gt;&lt;/subtitle&gt;&lt;icon&gt;icon.png&lt;/icon&gt;&lt;/item&gt;\n};
 } 
 if (index(lc('Modify Sites Configuration'), lc("{query}")) &amp;&amp; "{query}" ne "") {
 print qq{&lt;item uid="0001"&gt;&lt;arg&gt;sitesconfig&lt;/arg&gt;&lt;title&gt;Modify sites configuration&lt;/title&gt;&lt;subtitle&gt;&lt;/subtitle&gt;&lt;icon&gt;icon.png&lt;/icon&gt;&lt;/item&gt;\n};}
 if ((index(lc('Open configuration folder'), lc("{query}")) != -1) &amp;&amp; "{query}" ne "") {
 print qq{&lt;item uid="0002"&gt;&lt;arg&gt;configfolder&lt;/arg&gt;&lt;title&gt;Open configuration folder&lt;/title&gt;&lt;subtitle&gt;&lt;/subtitle&gt;&lt;icon&gt;icon.png&lt;/icon&gt;&lt;/item&gt;\n};}  
+if ((index(lc('Set root config folder location (enable syncing)'), lc("{query}")) != -1) &amp;&amp; "{query}" ne "") {
+print qq{&lt;item uid="0003"&gt;&lt;arg&gt;configfolderlocationsetup&lt;/arg&gt;&lt;title&gt;Set root config folder location (enable syncing)&lt;/title&gt;&lt;subtitle&gt;&lt;/subtitle&gt;&lt;icon&gt;icon.png&lt;/icon&gt;&lt;/item&gt;\n};} 
 print "&lt;/items&gt;\n";</string>
 				<key>title</key>
 				<string>Configure Favourite Sites and Tabs Workflow</string>
