@@ -8,7 +8,7 @@ require File.expand_path('../browser_tabs', __FILE__)
 
 #global_config_file="config/setup.yml"
 #until we know otherwise force config location (make sure this always has a trailing slash... we assume it will)
-default_config_location="~/Library/Application Support/Alfred 2/Workflow Data/com.clintonstrong.SearchTabs/"
+default_config_location="~/Library/Application Support/Alfred 2/Workflow Data/com.stuartryan.alfred.rapidbrowsertabs/"
 example_sites_config="config/sites_example.yml"
 example_setup_config="config/setup_example.yml"
 setup_file_name="setup.yml"

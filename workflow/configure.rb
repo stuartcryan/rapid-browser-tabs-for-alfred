@@ -7,11 +7,12 @@ require File.expand_path('../alfred_feedback', __FILE__)
 
 #global_config_file="config/setup.yml"
 #until we know otherwise force config location (make sure this always has a trailing slash... we assume it will)
-default_config_location="~/Library/Application Support/Alfred 2/Workflow Data/com.clintonstrong.SearchTabs/"
+default_config_location="~/Library/Application Support/Alfred 2/Workflow Data/com.stuartryan.alfred.rapidbrowsertabs/"
 example_sites_config="config/sites_example.yml"
 example_setup_config="config/setup_example.yml"
 setup_file_name="setup.yml"
 sites_file_name="sites.yml"
+standard_default_config_location=default_config_location + setup_file_name
 
 query = ARGV[0].strip.downcase
 fb = Feedback.new
@@ -41,4 +42,6 @@ if query == "sitesconfig"
 system "open '" + File.expand_path(default_config_location + sites_file_name) + "'"
 elsif query == "configfolder"
 system "open '" + File.expand_path(default_config_location) + "'"
+elsif query == "configfolderlocationsetup"
+system "open '" + File.expand_path(standard_default_config_location) + "'"
 end
