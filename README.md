@@ -39,7 +39,7 @@ The default keyword set is "rbt" here are some examples of what you can do:
 * rbt nf - Same thing as above but will open Netflix
 * rbt netflix - Same as above, workflow will recognise this is a favourite site and show all tabs currently open and will also offer the option to open a new tab to the Netflix website.
 
-For backwards compatibility with the human brain (and the fact that everyone is used to using the keyword "tabs"), an additional entry point into the workflow using the keyword "tabs" has been added. Depending on user feedback this may be removed in the future.
+For backwards compatibility with the human brain (and the fact that everyone is used to using the keyword "tabs"), an additional entry point into the workflow using the keyword "tabs" has been added. Depending on user feedback this may be removed or adopted permanently in the future.
 
 ## Advanced Configuration - Adding your own favourites
 
