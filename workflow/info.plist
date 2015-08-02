@@ -309,7 +309,21 @@ print "&lt;/items&gt;\n";</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>A workflow for Alfred based on the Search Tabs on Safari and Chrome workflow developed by Clinton Strong.
+
+Rapid Browser Tabs Workflow for Alfred has been forked from this workflow (with Clinton's blessing) and adds the ability to create favourites that can be searched and opened alongside already open tabs in Chrome and Safari.
+
+Command your browser tabs... don't let them command you!
+
+Donations
+
+This workflow represents many many hours effort of development, testing and rework. The images licensed for this workflow from DepositPhotos also needed a bit of my moolah. So if you love the workflow, and get use out of it every day, if you would like to donate as a thank you to buy me more caffeine giving Diet Coke, some Cake, or to put towards a shiny new gadget you can donate to me via Paypal (https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=JM6E65M2GLXHE)
+
+License
+
+All code in this workflow is released under the MIT License. Images used as part of the workflow are licensed only for use in this workflow and must be changed if the workflow is forked in the future.
+
+All images have been licensed from DepositPhotos to Stuart Ryan.</string>
 	<key>uidata</key>
 	<dict>
 		<key>1D3AC690-8936-40C9-95DD-628CF2A811C6</key>
