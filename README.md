@@ -14,6 +14,7 @@ Command your browser tabs... don't let them command you!
 The workflow has been designed to enable settings synchronisation via a mechanism of your choice (such as Dropbox). It is easiest to set this up before you get too deep into configuring the workflow.
 
 To configure synchronisation via Dropbox (as an example):
+
 1. Run 'rbtsetup' and select "Set root config folder location"
 2. Update the folder name to point to a new location, my personal preference is "~/Dropbox/AlfredSync/Workflow Data/com.stuartryan.alfred.rapidbrowsertabs/" (however you can use any location as long as you set it to be the same on different computers)
 3. Ensure you have ended your path with a trailing forward slash (things will break if you don't) and then save and close the configuration file. 
@@ -22,6 +23,7 @@ To configure synchronisation via Dropbox (as an example):
 
 Configure a hotkey:
 To make your life easier I also recommend you set up a hotkey for use with the workflow. 
+
 1. Open Alfred
 2. Click Workflows --> Rapid Browser Tabs
 3. Double click on the Hotkey box
