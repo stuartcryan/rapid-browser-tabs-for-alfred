@@ -6,7 +6,7 @@ Rapid Browser Tabs Workflow for Alfred has been forked from this workflow (with 
 Command your browser tabs... don't let them command you!
 
 ## Donations
-This workflow represents many many hours effort of development, testing, re-work, retesting and so on. I have also paid (out of my own pocket) for licensing the needed images from [DepositPhotos](http://depositphotos.com?ref=1682540). So if you love the workflow, and get use out of it every day, if you would like to donate as a thank you to buy me more caffeine giving Diet Coke, some Cake, or to put towards a shiny new gadget you can [donate to me via Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JM6E65M2GLXHE). If you have the personal capacity to, every little bit helps to keep me well caffeinated and ready to help support people when they have issues. 
+This workflow represents many many hours effort of development, testing and rework. The images licensed for this workflow from [DepositPhotos](http://depositphotos.com?ref=1682540) also needed a bit of my moolah. So if you love the workflow, and get use out of it every day, if you would like to donate as a thank you to buy me more caffeine giving Diet Coke, some Cake, or to put towards a shiny new gadget you can [donate to me via Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JM6E65M2GLXHE). 
 
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JM6E65M2GLXHE" target="_blank"><img src="https://www.paypalobjects.com/en_AU/i/btn/btn_donateCC_LG.gif" border="0" alt="PayPal — The safer, easier way to pay online."></a>
 
@@ -17,6 +17,13 @@ This workflow represents many many hours effort of development, testing, re-work
 2. Run to import into Alfred
 
 ## Setup
+Before you can do anything with the workflow you will need to initialise the settings:
+
+1. Run rbtsetup and select 'Initialise Workflow Configuration'
+2. The workflow will then copy over the default configuration files and example icons.
+
+<img src="http://akamai.technicalnotebook.com/alfred-workflow-images/rapid-browser-tabs-for-alfred/pre_config.png">
+
 The workflow has been designed to enable settings synchronisation via a mechanism of your choice (such as Dropbox). It is easiest to set this up before you get too deep into configuring the workflow.
 
 To configure synchronisation via Dropbox (as an example):
@@ -26,6 +33,8 @@ To configure synchronisation via Dropbox (as an example):
 3. Ensure you have ended your path with a trailing forward slash (things will break if you don't) and then save and close the configuration file. 
 4. If this is the first computer you are setting the workflow up on (i.e. that directory does not exist or is empty) run rbtsetup then select "Refresh workflow configuration" to copy the default configurations into place
 5. Repeat steps 1 to 3 for every subsequent computer you will run the workflow on (after the initial sync has completed via Dropbox).
+
+<img src="http://akamai.technicalnotebook.com/alfred-workflow-images/rapid-browser-tabs-for-alfred/configure_screen.png">
 
 Configure a hotkey:
 To make your life easier I also recommend you set up a hotkey for use with the workflow. 
@@ -47,8 +56,13 @@ The default keyword set is "rbt" here are some examples of what you can do:
 
 For backwards compatibility with the human brain (and the fact that everyone is used to using the keyword "tabs"), an additional entry point into the workflow using the keyword "tabs" has been added. Depending on user feedback this may be removed or adopted permanently in the future.
 
+<img src="http://akamai.technicalnotebook.com/alfred-workflow-images/rapid-browser-tabs-for-alfred/facebook_example.png">
+
+<img src="http://akamai.technicalnotebook.com/alfred-workflow-images/rapid-browser-tabs-for-alfred/favourites_example.png">
+
 ## Advanced Configuration - Adding your own favourites
 
+### YAML Config File
 Once you have the hang of the basic usage of the workflow, you can get down to configuring extra "Favourites".
 
 The favourites have been designed to represent the most used sites you use, the ones that you access day in and day out so that you can get rapid access to them.
@@ -81,6 +95,12 @@ The key difference between the two above examples are the use of the '? "Site na
 The aliases section can list zero or more aliases (for zero just use "", and do not delete the line). Each alias should be prefixed by a dash '-', and you can have as many keywords as you would like (but remember... less is more).
 
 If you are having problems with the site configuration you have created, a great first point is to run it through [YAML Lint](http://www.yamllint.com/) which can validate if there is anything invalid in your syntax. If that comes back clean and you still have issues please log an issue.
+
+### Adding the pretty favourite images
+
+You will notice in the above example each item references a png icon file. You can save icons that you would like to represent your favourites in the icons folder. This is accessed by typing 'rbtsetup' then selecting "Open icons storage folder". As long as the icons in this folder match what you put on your text you can use a pretty icon.
+
+If you would rather not use an image just use 'icon.png' and this will use the default icon for the workflow.
 
 ## Supported Browsers
 
