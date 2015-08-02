@@ -1,0 +1,2 @@
+#Always make sure this line ends with a / and it should only point to a directory, not a file
+config_location: "~/Library/Application Support/Alfred 2/Workflow Data/com.stuartryan.alfred.rapidbrowsertabs/"
