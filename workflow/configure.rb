@@ -55,6 +55,8 @@ elsif query == "configfolder"
 	system "open '" + File.expand_path(default_config_location) + "'"
 elsif query == "configfolderlocationsetup"
 	system "open '" + File.expand_path(standard_default_config_location) + "'"
+elsif query == "iconsfolder"
+	system "open '" + File.expand_path(standard_default_config_location + icon_folder) + "'"
 elsif query == "refreshconfig"
 #	if (!Dir.exists?(File.expand_path(default_config_location)))
 #		FileUtils.mkdir_p(File.expand_path(default_config_location))
