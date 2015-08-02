@@ -36,11 +36,11 @@ Slashdot:
   aliases: "-toggl"
   icon: toggl.png
   url: "https://toggl.com/app"
-? "Torguard.net Anonymous VPN Service"
+? "Torguard.net VPN"
 : 
   aliases: "-tg"
   icon: torguard.png
-  url: "https://torguard.net/"
+  url: "https://torguard.net/clientarea.php"
 YouTube: 
   aliases: "-yt"
   icon: youtube.png
