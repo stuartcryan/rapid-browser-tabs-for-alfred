@@ -10,8 +10,11 @@ require File.expand_path('../alfred_feedback', __FILE__)
 default_config_location="~/Library/Application Support/Alfred 2/Workflow Data/com.stuartryan.alfred.rapidbrowsertabs/"
 example_sites_config="config/sites_example.yml"
 example_setup_config="config/setup_example.yml"
+example_icon_folder="config/icons_example"
+icon_folder="icons"
 setup_file_name="setup.yml"
 sites_file_name="sites.yml"
+icon_directory_name="icons"
 standard_default_config_location=default_config_location + setup_file_name
 
 query = ARGV[0].strip.downcase
@@ -20,6 +23,10 @@ fb = Feedback.new
 def copy_with_path(src, dst)
   FileUtils.mkdir_p(File.dirname(dst))
   FileUtils.cp(src, dst)
+end
+
+def copy_directory(src, dst)
+  FileUtils.cp_r(src, dst)
 end
 
 if !File.file?(File.expand_path(default_config_location + setup_file_name)) 
@@ -35,6 +42,10 @@ rescue ArgumentError => e
 end
 
 default_config_location=global_config['config_location']
+
+if !Dir.exists?(File.expand_path(default_config_location + icon_directory_name)) 
+copy_directory(File.expand_path(example_icon_folder), File.expand_path(default_config_location + icon_folder))
+end
 
 end
 
