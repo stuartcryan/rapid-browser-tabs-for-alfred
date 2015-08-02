@@ -37,7 +37,7 @@ The default keyword set is "rbt" here are some examples of what you can do:
 * rbt google - Will show all tabs you currently have open that have google in the URL or the tab description.
 * rbt fb - FB is set as a keyword for Facebook. This will show any current Facebook tabs already open and will also allow you to open a new Facebook tab in your default browser as well.
 * rbt nf - Same thing as above but will open Netflix
-* rbt torguard - Same as above, workflow will recognise this is a favourite site and show all tabs currently open and will also offer the option to open a new tab to the Torguard anonymous VPN service
+* rbt netflix - Same as above, workflow will recognise this is a favourite site and show all tabs currently open and will also offer the option to open a new tab to the Netflix website.
 
 For backwards compatibility with the human brain (and the fact that everyone is used to using the keyword "tabs"), an additional entry point into the workflow using the keyword "tabs" has been added. Depending on user feedback this may be removed in the future.
 
