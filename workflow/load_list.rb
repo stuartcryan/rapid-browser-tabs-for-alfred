@@ -18,16 +18,16 @@ query = ARGV[0].strip.downcase
 tabs = BrowserTabs.tabs
 fb = Feedback.new
 
-def copy_with_path(src, dst)
-  FileUtils.mkdir_p(File.dirname(dst))
-  FileUtils.cp(src, dst)
-end
-
 if !File.file?(File.expand_path(default_config_location + setup_file_name)) 
-setup_config_destination = File.expand_path(default_config_location + setup_file_name)
-sites_config_destination = File.expand_path(default_config_location + sites_file_name)
-copy_with_path(example_setup_config, setup_config_destination)
-copy_with_path(example_sites_config, sites_config_destination)
+#errorOutAndReturn
+fb.add_item(
+    			:title => "Workflow has not been initialised. Please run 'rbtsetup'.",
+   				:subtitle => "Running rbtsetup the first time will configure the workflow with the default example files",
+    			:uid => "errorReturn",
+    			:arg => "ERROR",
+    			:icon => { :name => 'error.png' })
+    			puts fb.to_xml
+exit 1
 else
 global_config = begin
   YAML.load(File.open(File.expand_path(default_config_location + setup_file_name)))

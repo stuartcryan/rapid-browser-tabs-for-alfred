@@ -180,12 +180,14 @@
 				<key>queuedelaymode</key>
 				<integer>1</integer>
 				<key>queuemode</key>
-				<integer>2</integer>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>Loading setup options</string>
 				<key>script</key>
 				<string>use strict;
 use warnings;
+
+`ruby configure.rb "none"`;
 
 print qq{&lt;?xml version="1.0" encoding="UTF-8" ?&gt;\n&lt;items&gt;\n};
 
