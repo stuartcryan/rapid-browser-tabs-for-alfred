@@ -25,7 +25,7 @@ fb.add_item(
    				:subtitle => "Running rbtsetup the first time will configure the workflow with the default example files",
     			:uid => "errorReturn",
     			:arg => "ERROR",
-    			:icon => { :name => 'error.png' })
+    			:icon => { :name => 'images/red_error.png' })
     			puts fb.to_xml
 exit 1
 else
@@ -74,7 +74,7 @@ fb.add_item(
    				:subtitle => "If you have just changed the config location please run rbtsetup then select Refresh workflow config.",
     			:uid => "errorReturn",
     			:arg => "ERROR",
-    			:icon => { :name => 'error.png' })
+    			:icon => { :name => 'images/red_error.png' })
     			puts fb.to_xml
 exit 1
 else
