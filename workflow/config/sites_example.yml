@@ -7,11 +7,6 @@ Facebook:
   aliases: "-fb -facebook"
   icon: facebook.png
   url: "https://facebook.com"
-? "Foxtel Community Forums"
-: 
-  aliases: "-foxtel"
-  icon: foxtel.png
-  url: "http://community.foxtel.com.au/"
 Gizmodo: 
   aliases: "-gm"
   icon: gizmodo.png
