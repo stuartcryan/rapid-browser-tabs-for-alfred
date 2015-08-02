@@ -67,10 +67,22 @@ def icon_for_tab(tab)
   end
 end
 
-parsed = begin
-  YAML.load(File.open(File.expand_path(default_config_location + sites_file_name)))
-rescue ArgumentError => e
-  puts "Could not parse YAML: #{e.message}"
+if !File.file?(File.expand_path(default_config_location + sites_file_name)) 
+#errorOutAndReturn
+fb.add_item(
+    			:title => "Unable to find sites config file.",
+   				:subtitle => "If you have just changed the config location please run rbtsetup then select Refresh workflow config.",
+    			:uid => "errorReturn",
+    			:arg => "ERROR",
+    			:icon => { :name => 'error.png' })
+    			puts fb.to_xml
+exit 1
+else
+	parsed = begin
+  		YAML.load(File.open(File.expand_path(default_config_location + sites_file_name)))
+		rescue ArgumentError => e
+  		puts "Could not parse YAML: #{e.message}"
+	end
 end
 
 known_tabs ||= []
