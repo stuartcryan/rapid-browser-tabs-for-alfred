@@ -84,6 +84,17 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>8BF1F927-35BC-48BD-89CF-3EB9069A81C0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8B7316C0-EE3E-471C-9EDE-E10721BA4D2C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>99089902-95BC-4DA8-AFAD-F787099689DD</key>
 		<array>
 			<dict>
@@ -380,6 +391,29 @@ print "&lt;/items&gt;\n";</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>title</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>8B7316C0-EE3E-471C-9EDE-E10721BA4D2C</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>A workflow for Alfred based on the Search Tabs on Safari and Chrome workflow developed by Clinton Strong.
@@ -425,6 +459,11 @@ All images have been licensed from DepositPhotos to Stuart Ryan.</string>
 			<real>50</real>
 		</dict>
 		<key>845C936F-49E6-4DF0-B15B-2EF72619CB34</key>
+		<dict>
+			<key>ypos</key>
+			<real>500</real>
+		</dict>
+		<key>8B7316C0-EE3E-471C-9EDE-E10721BA4D2C</key>
 		<dict>
 			<key>ypos</key>
 			<real>500</real>
