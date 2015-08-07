@@ -1,8 +1,7 @@
 #
 # This file originally written by Clinton Strong for the Search Safari and Chrome Tabs Workflow
 # published at http://www.alfredforum.com/topic/236-search-safari-and-chrome-tabs-updated-feb-8-2014/?hl=%2Bsafari+%2Btabs
-# This workflow has been forked from the Feb 8, 2014 release of the workflow and is currently in modified state
-# following the original fork.
+# This workflow has been forked from the Feb 8, 2014 release of the workflow and is currently in a modified state.
 #
 
 Encoding.default_external = Encoding::UTF_8 if defined? Encoding

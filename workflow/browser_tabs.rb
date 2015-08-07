@@ -1,8 +1,7 @@
 #
 # This file originally written by Clinton Strong for the Search Safari and Chrome Tabs Workflow
 # published at http://www.alfredforum.com/topic/236-search-safari-and-chrome-tabs-updated-feb-8-2014/?hl=%2Bsafari+%2Btabs
-# This file has been forked from the Feb 8, 2014 release of the workflow and is currently in an unmodified state
-# with the exception of this comment)
+# This file has been forked from the Feb 8, 2014 release of the workflow and is currently in a modified state
 #
 
 # Allow for local testing without having the gem installed
@@ -14,6 +13,7 @@ require 'browser_tabs/processes'
 require 'browser_tabs/commands/list_tabs'
 require 'browser_tabs/commands/close_tab'
 require 'browser_tabs/commands/activate_tab'
+require 'browser_tabs/commands/activate_and_reload_tab'
 
 module BrowserTabs
   class << self
@@ -39,6 +39,10 @@ module BrowserTabs
 
     def activate(url)
       run_command(@tab_activator ||= ActivateTab.new, :url => url)
+    end
+    
+    def activateAndReload(url)
+      run_command(@tab_activator ||= ActivateAndReloadTab.new, :url => url)
     end
 
     def browser_running?(app_name)
