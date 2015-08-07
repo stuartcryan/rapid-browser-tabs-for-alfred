@@ -61,10 +61,14 @@ end
 
 def icon_for_tab(tab)
   if tab.browser == "WebKit" || tab.browser == "Safari"
+    if File.file?(File.expand_path("/Applications/Safari.app/Contents/Resources/document.icns"))
     "/Applications/Safari.app/Contents/Resources/document.icns"
-  else
+    else 
+    "/Applications/Safari.app/Contents/Resources/html.icns"
+    end
+  else 
     "/Applications/#{tab.browser}.app/Contents/Resources/document.icns"
-  end
+    end
 end
 
 if !File.file?(File.expand_path(default_config_location + sites_file_name)) 
