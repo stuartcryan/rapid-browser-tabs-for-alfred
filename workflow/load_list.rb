@@ -176,7 +176,7 @@ if query != ""
     			:icon => { :name => icon_location })
     		end
 		end
-			if tab_count == 0 && (key.downcase.include?(query) || aliases.downcase.include?(query))
+			if tab_count == 0 && (key.downcase.include?(query) || aliases.downcase.include?(query) || url.downcase.include?(query))
 			    tab_count += 1
 				fb.add_item(
     			:title => global_key,
