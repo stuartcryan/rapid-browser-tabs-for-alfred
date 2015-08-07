@@ -68,6 +68,17 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>99089902-95BC-4DA8-AFAD-F787099689DD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3F137D40-7DF0-4E0F-8970-B523739F438A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>B3B0ECB1-B591-4E9A-B623-C2AFFF27E1F0</key>
 		<array/>
 	</dict>
@@ -128,7 +139,7 @@
 				<key>hotkey</key>
 				<integer>17</integer>
 				<key>hotmod</key>
-				<integer>262144</integer>
+				<integer>524288</integer>
 				<key>hotstring</key>
 				<string>T</string>
 				<key>leftcursor</key>
@@ -163,6 +174,33 @@
 			<string>1F537C5E-7F6F-4B71-987D-DAF5775545CF</string>
 			<key>version</key>
 			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>hotkey</key>
+				<integer>17</integer>
+				<key>hotmod</key>
+				<integer>262144</integer>
+				<key>hotstring</key>
+				<string>T</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>99089902-95BC-4DA8-AFAD-F787099689DD</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -355,6 +393,11 @@ All images have been licensed from DepositPhotos to Stuart Ryan.</string>
 		<dict>
 			<key>ypos</key>
 			<real>380</real>
+		</dict>
+		<key>99089902-95BC-4DA8-AFAD-F787099689DD</key>
+		<dict>
+			<key>ypos</key>
+			<real>220</real>
 		</dict>
 		<key>B3B0ECB1-B591-4E9A-B623-C2AFFF27E1F0</key>
 		<dict>
