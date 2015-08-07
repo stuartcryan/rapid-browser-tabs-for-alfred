@@ -51,12 +51,16 @@ end
 
 if query == "sitesconfig"
 	system "open '" + File.expand_path(default_config_location + sites_file_name) + "'"
+	puts "Sites configuration file opened"
 elsif query == "configfolder"
 	system "open '" + File.expand_path(default_config_location) + "'"
+	puts "Configuration folder opened"
 elsif query == "configfolderlocationsetup"
 	system "open '" + File.expand_path(standard_default_config_location) + "'"
+	puts "Config location config file opened"
 elsif query == "iconsfolder"
 	system "open '" + File.expand_path(standard_default_config_location + icon_folder) + "'"
+	puts "Icons folder opened"
 elsif query == "refreshconfig"
 #	if (!Dir.exists?(File.expand_path(default_config_location)))
 #		FileUtils.mkdir_p(File.expand_path(default_config_location))
@@ -71,6 +75,7 @@ elsif query == "refreshconfig"
 		if !Dir.exists?(File.expand_path(default_config_location + icon_directory_name)) 
 			copy_directory(File.expand_path(example_icon_folder), File.expand_path(default_config_location + icon_folder))
 		end
+		puts "Copied default configuration"
 	end
 
 	if (default_config_location != original_default_config_location)
@@ -84,5 +89,6 @@ elsif query == "refreshconfig"
 		if (!Dir.exists?(File.expand_path(default_config_location + icon_directory_name)))
 			copy_directory(File.expand_path(original_default_config_location + icon_folder), File.expand_path(default_config_location))
 		end
+		puts "Copied/Refreshed configuration files"
 	end
 end
