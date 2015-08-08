@@ -61,10 +61,14 @@ end
 
 def icon_for_tab(tab)
   if tab.browser == "WebKit" || tab.browser == "Safari"
+    if File.file?(File.expand_path("/Applications/Safari.app/Contents/Resources/document.icns"))
     "/Applications/Safari.app/Contents/Resources/document.icns"
-  else
+    else 
+    "/Applications/Safari.app/Contents/Resources/html.icns"
+    end
+  else 
     "/Applications/#{tab.browser}.app/Contents/Resources/document.icns"
-  end
+    end
 end
 
 if !File.file?(File.expand_path(default_config_location + sites_file_name)) 
@@ -108,7 +112,7 @@ if query != ""
    				icon = v
 		    end
   		end
-  		if key.downcase.include?(query) || aliases.downcase.include?(query)
+  		if key.downcase.include?(query) || aliases.downcase.include?(query) || url.downcase.include?(query)
   		#query is a heavily modified version of @giegoperini's example from https://mathiasbynens.be/demo/url-regex modified to work with Ruby
   		url =~ /^^(?:(?:https?|ftp):\/\/)(?:\S+(?::\S*)?@)?(?:(?!10(?:\.\d{1,3}){3})(?!127(?:\.\d{1,3}){3})(?!169\.254(?:\.\d{1,3}){2})(?!192\.168(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|((?:(?:[a-z\\x{00a1}\-\\x{ffff}0-9]+\-?)*[a-z\\x{00a1}\-\\x{ffff}0-9]+)(?:\.(?:[a-z\\x{00a1}\-\\x{ffff}0-9]+\-?)*[a-z\\x{00a1}\-\\x{ffff}0-9]+)*(?:\.(?:[a-z\\x{00a1}\-\\x{ffff}]{2,}))|(?:([0-9]*\.[0-9]*.[0-9]*.[0-9]*))?)((?::\d{2,5})?(?:\/*[^\s]*)))?$/
   		stripped_url = $1
@@ -172,7 +176,7 @@ if query != ""
     			:icon => { :name => icon_location })
     		end
 		end
-			if tab_count == 0 && (key.downcase.include?(query) || aliases.downcase.include?(query))
+			if tab_count == 0 && (key.downcase.include?(query) || aliases.downcase.include?(query) || url.downcase.include?(query))
 			    tab_count += 1
 				fb.add_item(
     			:title => global_key,

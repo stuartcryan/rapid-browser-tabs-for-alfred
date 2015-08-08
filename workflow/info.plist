@@ -23,6 +23,14 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
+				<string>83D49CB5-6BB4-4FE2-A8E3-42341F96CCA9</string>
+				<key>modifiers</key>
+				<integer>262144</integer>
+				<key>modifiersubtext</key>
+				<string>Load tab and force a refresh</string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>1F537C5E-7F6F-4B71-987D-DAF5775545CF</string>
 				<key>modifiers</key>
 				<integer>524288</integer>
@@ -40,6 +48,14 @@
 		</array>
 		<key>4230B96A-C369-44D6-B680-DC7D20FFFD9C</key>
 		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>83D49CB5-6BB4-4FE2-A8E3-42341F96CCA9</string>
+				<key>modifiers</key>
+				<integer>262144</integer>
+				<key>modifiersubtext</key>
+				<string>Load tab and force a refresh</string>
+			</dict>
 			<dict>
 				<key>destinationuid</key>
 				<string>1F537C5E-7F6F-4B71-987D-DAF5775545CF</string>
@@ -68,6 +84,28 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>8BF1F927-35BC-48BD-89CF-3EB9069A81C0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8B7316C0-EE3E-471C-9EDE-E10721BA4D2C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>99089902-95BC-4DA8-AFAD-F787099689DD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3F137D40-7DF0-4E0F-8970-B523739F438A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>B3B0ECB1-B591-4E9A-B623-C2AFFF27E1F0</key>
 		<array/>
 	</dict>
@@ -81,6 +119,52 @@
 	<string>Rapid Browser Tabs</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>ruby actions/activateAndReload.rb "{query}"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>83D49CB5-6BB4-4FE2-A8E3-42341F96CCA9</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>hotkey</key>
+				<integer>17</integer>
+				<key>hotmod</key>
+				<integer>524288</integer>
+				<key>hotstring</key>
+				<string>T</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>1D3AC690-8936-40C9-95DD-628CF2A811C6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -121,6 +205,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>ruby actions/close.rb "{query}"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>1F537C5E-7F6F-4B71-987D-DAF5775545CF</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -141,47 +244,9 @@
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>1D3AC690-8936-40C9-95DD-628CF2A811C6</string>
+			<string>99089902-95BC-4DA8-AFAD-F787099689DD</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>ruby actions/close.rb "{query}"</string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>1F537C5E-7F6F-4B71-987D-DAF5775545CF</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>ruby actions/activate.rb "{query}"</string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>B3B0ECB1-B591-4E9A-B623-C2AFFF27E1F0</string>
-			<key>version</key>
-			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -217,6 +282,25 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>4230B96A-C369-44D6-B680-DC7D20FFFD9C</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>ruby actions/activate.rb "{query}"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>B3B0ECB1-B591-4E9A-B623-C2AFFF27E1F0</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -307,6 +391,29 @@ print "&lt;/items&gt;\n";</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>title</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>8B7316C0-EE3E-471C-9EDE-E10721BA4D2C</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>A workflow for Alfred based on the Search Tabs on Safari and Chrome workflow developed by Clinton Strong.
@@ -334,32 +441,47 @@ All images have been licensed from DepositPhotos to Stuart Ryan.</string>
 		<key>1F537C5E-7F6F-4B71-987D-DAF5775545CF</key>
 		<dict>
 			<key>ypos</key>
-			<real>100</real>
+			<real>210</real>
 		</dict>
 		<key>3F137D40-7DF0-4E0F-8970-B523739F438A</key>
 		<dict>
 			<key>ypos</key>
-			<real>100</real>
+			<real>160</real>
 		</dict>
 		<key>4230B96A-C369-44D6-B680-DC7D20FFFD9C</key>
 		<dict>
 			<key>ypos</key>
-			<real>250</real>
+			<real>290</real>
+		</dict>
+		<key>83D49CB5-6BB4-4FE2-A8E3-42341F96CCA9</key>
+		<dict>
+			<key>ypos</key>
+			<real>50</real>
 		</dict>
 		<key>845C936F-49E6-4DF0-B15B-2EF72619CB34</key>
 		<dict>
 			<key>ypos</key>
-			<real>380</real>
+			<real>500</real>
+		</dict>
+		<key>8B7316C0-EE3E-471C-9EDE-E10721BA4D2C</key>
+		<dict>
+			<key>ypos</key>
+			<real>500</real>
 		</dict>
 		<key>8BF1F927-35BC-48BD-89CF-3EB9069A81C0</key>
 		<dict>
 			<key>ypos</key>
-			<real>380</real>
+			<real>500</real>
+		</dict>
+		<key>99089902-95BC-4DA8-AFAD-F787099689DD</key>
+		<dict>
+			<key>ypos</key>
+			<real>220</real>
 		</dict>
 		<key>B3B0ECB1-B591-4E9A-B623-C2AFFF27E1F0</key>
 		<dict>
 			<key>ypos</key>
-			<real>250</real>
+			<real>370</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>

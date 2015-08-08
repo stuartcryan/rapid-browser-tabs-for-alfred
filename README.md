@@ -127,6 +127,11 @@ Feel free to [log your ideas and suggestions on GitHub](https://github.com/stuar
 
 ## History
 
+* Version 1.1 - Bugfix and Feature Release
+	* Fix - Tab icon for Safari did not display
+	* Feature - Add "ctrl" key modified to force reload tab on opening
+	* Feature - Provide feedback on settings initialisation and sync
+	* Feature - Enable favourite searching by URL
 * Version 1.0 - Initial Release of Rapid Browser Tabs for Alfred
 * Version 0.9 - Forked from Search Safari and Chrome Tabs workflow Feb 2014 release
 
