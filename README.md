@@ -1,16 +1,11 @@
-# Rapid Browser Tabs Workflow for Alfred
-A workflow for Alfred based on the Search Tabs on Safari and Chrome workflow developed by Clinton Strong.
-
-Rapid Browser Tabs Workflow for Alfred has been forked from this workflow (with Clinton's blessing) and adds the ability to create favourites that can be searched and opened alongside already open tabs in Chrome and Safari.
-
-What does it do?
+# Search, activate, reload and close your active Chrome and Safari tabs and favourite sites.
 RBT allows you to do the following all from within Alfred:
-1. Search all open tabs across Chrome and Safari. Using the provided input, search the tab URL, and the tab title and then based on the found (and selected) tab, bring the tab and browser forward. Essentially this lets you find a tab that you know you have open regardless of where it might be hiding in a different browser window or in a window with 20+ other tabs.
-2. Add "favourites" to the workflow. By inputting favourites (including Name, URL, keywords and an optional icon file) into a text file (YAML was selected as it is easy to modify the examples), you can create quick access favourites that can be opened even if no open tab to that website already exists. Take for example Facebook, if you type "rbt face" you will see any browser tabs that have "face" in the URL or the Title. If there is a tab already open you can select it. What the favourites feature extends is the ability to then go one step further. If no Facebook tab is open, you will be presented with the favourite and can elect to open a new tab to facebook.com in your default browser. To bring this back to basics, think of this as merging the search of opens tabs with your most accessed websites so you can find them easily (and by specific, shortened keywords defined in the text file).
-3. Synchronise your favourites across computers. As the setting up of favourites has to be done manually, it is preferable to have them available easily, should you use Alfred on multiple machines. Therefore, the synchronisation function allows you to point the workflow to an external folder (I suggest dropbox) where the sites configuration and site icons are stored. That way, after you have set it up on one computer, all you have to do is point other computers to the folder in your Dropbox and you will have a synchronised copy of the favourites available.
-4. In the latest release, a new feature has been added where you can reload a tab when you select it by simply holding down the control key. This will be most useful for people that regularly access forum sites, news sites and so on. You know you want to go to that tab (to save opening a new one) but the information will likely be out of date, now you can simply force it to reload.
+1. Search all open tabs across Chrome and Safari and load a selected tab.
+2. Reload a tab forcibly when you select it if you want.
+3. Add "favourite" sites to the workflow for quick access with defined keywords. 
+4. Synchronise your favourites across computers.  
 
-Command your browser tabs... don't let them command you!
+RBT for Alfred has been forked from the Search Tabs on Safari and Chrome workflow developed by Clinton Strong (with Clinton's blessing) and could almost be considered v2 of Clinton's original workflow.
 
 ## Donations
 This workflow represents many many hours effort of development, testing and rework. The images licensed for this workflow from [DepositPhotos](http://depositphotos.com?ref=1682540) also needed a bit of my moolah. So if you love the workflow, and get use out of it every day, if you would like to donate as a thank you to buy me more caffeine giving Diet Coke, some Cake, or to put towards a shiny new gadget you can [donate to me via Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JM6E65M2GLXHE). 
