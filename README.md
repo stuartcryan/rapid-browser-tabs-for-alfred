@@ -1,5 +1,6 @@
 # Search, activate, reload and close your active Chrome and Safari tabs and favourite sites.
 RBT allows you to do the following all from within Alfred:
+
 1. Search all open tabs across Chrome and Safari and load a selected tab.
 2. Reload a tab forcibly when you select it if you want.
 3. Add "favourite" sites to the workflow for quick access with defined keywords. 
