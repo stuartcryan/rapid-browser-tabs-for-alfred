@@ -42,20 +42,21 @@ end
 # Search anchored to slashes, dashes, and underscores
 def tab_matches_url?(tab, q)
   q1 = Regexp.escape(q)
-  search_regexp = /[\/_-]+.*#{Regexp.escape(q)}/
+  search_regexp = /[\/_-]+.*#{Regexp.escape(q)}/u
   (tab.url =~ search_regexp)  != nil
 end
 
 # Search anchored to the start of words (including CamelCase)
 def tab_matches_title?(tab, q)
-  search_regexp = /(\b|[\/\._-])#{Regexp.escape(q)}/
+  search_regexp = /(\b|[\/\._-])#{Regexp.escape(q)}/ui
 
   tab.title.downcase =~ search_regexp ||
   # Break CamelCase words into their individual components and search
-  tab.title.gsub(/([a-z\d])([A-Z])/,'\1 \2').downcase =~ search_regexp
+  tab.title.gsub(/([a-z\d])([A-Z])/ui,'\1 \2').downcase =~ search_regexp
 end
 
 def tab_matches_query?(tab, q)
+  q = q.force_encoding('UTF-8')
   tab_matches_url?(tab, q) || tab_matches_title?(tab, q)
 end
 
