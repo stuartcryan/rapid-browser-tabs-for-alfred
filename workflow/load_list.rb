@@ -48,11 +48,13 @@ end
 
 # Search anchored to the start of words (including CamelCase)
 def tab_matches_title?(tab, q)
-  search_regexp = /(\b|[\/\._-])#{Regexp.escape(q)}/ui
+  q.split().all? { |word|
+    search_regexp = /(\b|[\/\._-])#{Regexp.escape(word)}/ui
 
-  tab.title.downcase =~ search_regexp ||
-  # Break CamelCase words into their individual components and search
-  tab.title.gsub(/([a-z\d])([A-Z])/ui,'\1 \2').downcase =~ search_regexp
+    tab.title.downcase =~ search_regexp ||
+    # Break CamelCase words into their individual components and search
+    tab.title.gsub(/([a-z\d])([A-Z])/ui,'\1 \2').downcase =~ search_regexp
+  }
 end
 
 def tab_matches_query?(tab, q)
