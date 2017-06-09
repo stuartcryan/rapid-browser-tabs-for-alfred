@@ -23,7 +23,8 @@ module BrowserTabs
         'WebKit',
         'Google Chrome',
         'Google Chrome Canary',
-        'Chromium'
+        'Chromium',
+        'Yandex'
       ]
     end
 
