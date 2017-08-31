@@ -111,6 +111,7 @@ If you would rather not use an image just use 'icon.png' and this will use the d
 Currently the workflow supports the following browsers. As Firefox does not expose its tabs via Applescript, it is not able to be supported. If someone is a whizz at writing Firefox plugins and would like to collaborate on a plugin to get this to work please feel free to get into contact with me.
 * Chrome
 * Safari
+* Safari Technology Preview
 * Chromium
 * Chrome Canary
 * Webkit

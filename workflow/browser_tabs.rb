@@ -20,6 +20,7 @@ module BrowserTabs
     def supported_browsers
       @supported_browsers ||= [
         'Safari',
+        'Safari Technology Preview',
         'WebKit',
         'Google Chrome',
         'Google Chrome Canary',
