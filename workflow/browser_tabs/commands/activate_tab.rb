@@ -14,7 +14,7 @@ module BrowserTabs
     end
 
     def tab_body
-      if @app_name == 'Safari' || @app_name == 'WebKit'
+      if @app_name == 'Safari' || @app_name == 'Safari Technology Preview' || @app_name == 'WebKit'
         active_tab_keyword = 'current tab to tab'
       else
         active_tab_keyword = 'active tab index to '

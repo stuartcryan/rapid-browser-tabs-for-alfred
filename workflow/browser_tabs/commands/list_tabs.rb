@@ -22,7 +22,7 @@ module BrowserTabs
     end
 
     def tab_body
-      if @app_name == 'Safari' || @app_name == 'WebKit'
+      if @app_name == 'Safari' || @app_name == 'Safari Technology Preview' || @app_name == 'WebKit'
         title_keyword = 'name'
       else
         title_keyword = 'title'
