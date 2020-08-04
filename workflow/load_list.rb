@@ -15,7 +15,6 @@ setup_file_name="setup.yml"
 sites_file_name="sites.yml"
 
 query = ARGV[0].strip.downcase
-tabs = BrowserTabs.tabs
 fb = Feedback.new
 
 if !File.file?(File.expand_path(default_config_location + setup_file_name)) 
@@ -95,6 +94,7 @@ end
 known_tabs ||= []
 
 if query != ""
+	tabs = BrowserTabs.tabs
 	tab_count = 0
 	global_key = ""
 	global_url = ""
